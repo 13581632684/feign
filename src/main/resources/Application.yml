@@ -1,0 +1,13 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: feignNacos
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+feign:
+  sentinel:
+    enabled: true
+  fetch-registry: true
